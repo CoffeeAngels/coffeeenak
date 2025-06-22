@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffeenak - Toko Kopi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="img/logo.png" alt="Logo Coffeenak" class="logo" />
+      <h1 class="store-name">Coffeenak</h1>
+    </div>
+    <nav class="nav" role="navigation" aria-label="Menu utama">
+      <button id="btn-home" class="active" type="button">Beranda</button>
+      <button id="btn-menu" type="button">Menu</button>
+      <button id="btn-about" type="button">Tentang Kami</button>
+    </nav>
+    <div class="hamburger" id="hamburger-menu" aria-label="Buka/Tutup navigasi" role="button" tabindex="0">&#9776;</div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="content-section active" aria-label="Beranda">
+      <h2 class="welcome-message bg-highlight" aria-live="polite">Selamat datang ke Coffeenak Shop</h2>
+      <div class="story-section">
+        <img 
+          src="img/foto gacor.jpeg" 
+          alt="Kumpul teman ngobrol sambil minum kopi" 
+          class="story-image"
+          loading="lazy"
+          width="600" height="450"
+        />
+        <div class="story-text">
+          <h2>Cerita Kami</h2>
+          <p>
+            Di Coffeenak, kami percaya bahwa kopi adalah jembatan kebahagiaan yang menghubungkan banyak orang.
+            Setiap cangkir kopi yang kami sajikan adalah hasil dari cinta dan dedikasi kami 
+            untuk memberikan pengalaman terbaik bagi setiap pelanggan. Bergabunglah dengan kami dalam perjalanan menciptakan kenangan indah di setiap tegukan kopi.
+          </p>
+        </div>
+      </div>
+
+      <section class="about-coffee-container" aria-label="Tentang Kopi">
+        <div class="about-coffee-text">
+          <h2>Tentang Kopi</h2>
+          <p>
+            Kopi bukan hanya sekadar minuman, melainkan seni yang memikat indera dan merangkul jiwa.
+            Dari biji kopi pilihan hingga proses penyajian yang sempurna, setiap langkah kami lakukan dengan penuh perhatian 
+            untuk memastikan rasa yang otentik dan memuaskan.
+          </p>
+        </div>
+        <img 
+          src="img/foto kopi.jpeg" 
+          alt="Gelas kopi panas yang nikmat" 
+          class="about-coffee-image"
+          loading="lazy"
+          width="600" height="450"
+        />
+      </section>
+
+      <section class="contact-section" aria-label="Kontak Kami">
+        <h3>Contact Us</h3>
+        <div class="social-icons" role="list">
+          <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer" role="listitem">
+            <img src="img/icons8-facebook-48.png" class="social__icon" alt="">
+          </a>
+          <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer" role="listitem">
+            <img src="img/icons8-instagram-48.png" class="social__icon" alt="">
+          </a>
+          <a href="https://youtube.com" aria-label="Youtube" target="_blank" rel="noopener noreferrer" role="listitem">
+            <img src="img/icons8-youtube-48.png" class="social__icon" alt="">
+          </a>
+          <a href="https://whatsapp.com" aria-label="whatsapp" target="_blank" rel="noopener noreferrer" role="listitem">
+            <img src="img/icons8-whatsapp-48.png" class="social__icon" alt="">
+          </a>
+        </div>
+        <p>Follow kami di media sosial untuk mendapatkan informasi terbaru dan penawaran menarik!</p>
+      </section>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="content-section" aria-label="Menu Kopi" style="display:none;">
+      <h2 class="bg-highlight-section">Menu Kopi Kami</h2>
+      <div class="menu-container">
+        <div class="menu-row" id="menu-row-1"></div>
+        <div class="menu-row" id="menu-row-2"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="content-section" aria-label="Tentang Kami" style="display:none;">
+      <h2 class="bg-highlight-section">Tentang Kami</h2>
+      <div class="about-container">
+        <img src="img/kopi.jpg" alt="Logo kopi besar" class="about-logo" loading="lazy" width="300" height="300" />
+        <div class="about-text">
+          <p>
+            Kami bukan sekadar penjual kopi — kami adalah pecinta sejati yang mengabdikan diri untuk menghadirkan kopi terbaik dan pengalaman terbaik bagi setiap pelanggan kami.
+            Setiap biji kopi yang kami pilih berasal dari ladang-ladang terbaik, diolah dengan penuh cinta dan perhatian untuk memastikan rasa yang otentik.
+          </p>
+          <p>
+            Kami percaya bahwa pendidikan tentang kopi sangat penting. Kami sering mengadakan acara dan workshop untuk berbagi pengetahuan tentang cara menyeduh kopi yang baik, mengenali berbagai jenis biji kopi, dan memahami proses di balik setiap cangkir kopi.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Structure -->
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title"></h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <img class="modal-image" src="" alt="">
+        <div class="modal-price"></div>
+        <div class="modal-desc"></div>
+        <div class="modal-ingredients"></div>
+        <div class="modal-calories"></div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
